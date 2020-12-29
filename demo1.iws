@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27e528c3-1787-42bf-ae85-91ce0be30e04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/demo1.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/demo1.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo1.iws" beforeDir="false" afterPath="$PROJECT_DIR$/demo1.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lanqiaoProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lanqiaoProjects.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lanqiaoProjects/ReadProductExcel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lanqiaoProjects/ReadProductExcel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lanqiaoProjects/ReadProductExcel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lanqiaoProjects/ReadProductExcel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lanqiaoProjects/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lanqiaoProjects/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadProductExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadProductExcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +103,7 @@
       <workItem from="1609217652571" duration="1570000" />
       <workItem from="1609219301876" duration="154000" />
       <workItem from="1609226366338" duration="4054000" />
-      <workItem from="1609239135765" duration="1536000" />
+      <workItem from="1609239135765" duration="4645000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <created>1609226978706</created>
@@ -116,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609230283141</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="编写Markdown文件">
+      <created>1609240733398</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609240733398</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +146,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="首次提交" />
     <MESSAGE value="poi操作Excel" />
-    <option name="LAST_COMMIT_MESSAGE" value="poi操作Excel" />
+    <MESSAGE value="编写Markdown文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="编写Markdown文件" />
   </component>
 </project>
