@@ -23,16 +23,16 @@ public class ReadProductExcel {
                     if (cell == null)
                         continue;
                     if (k == 0) {
-                       product.setId(this.getValue(cell));//给username属性赋值
+                        product.setId(this.getValue(cell));//给username属性赋值
                     } else if (k == 1) {
                         product.setName(this.getValue(cell));//给password属性赋值
                     } else if (k == 2) {
                         product.setPrice(this.getValue(cell));//给address属性赋值
                     } else if (k == 3) {
-                       product.setDescribe(this.getValue(cell));//给phone属性赋值
+                        product.setDescribe(this.getValue(cell));//给phone属性赋值
                     }
                 }
-                products[j-1] = product;
+                products[j - 1] = product;
             }
 
         } catch (IOException e) {
@@ -40,6 +40,7 @@ public class ReadProductExcel {
         }
         return products;
     }
+
     public Product readProducById(String id, InputStream inputStream) {
         try {
             XSSFWorkbook xw = new XSSFWorkbook(inputStream);
@@ -61,13 +62,12 @@ public class ReadProductExcel {
                         product.setDescribe(this.getValue(cell));//给phone属性赋值
                     }
                 }
-              if (product.getId().equals(id)){
-                  return  product;
-              }
+                if (product.getId().equals(id)) {
+                    return product;
+                }
             }
 
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return null;
@@ -89,7 +89,7 @@ public class ReadProductExcel {
                 break;
             case NUMERIC:
                 DecimalFormat df = new DecimalFormat("#");
-                value=df.format(cell.getNumericCellValue());
+                value = df.format(cell.getNumericCellValue());
                 break;
             case FORMULA:
                 value = cell.getCellFormula();

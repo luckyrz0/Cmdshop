@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Test {
     public static void main(String args[]) throws ClassNotFoundException {
         boolean bol = false;
+        AddProductExcel shopCart = new AddProductExcel();
         while (!bol) {
             Scanner input = new Scanner(System.in);
             System.out.println("请输入用户名");
@@ -16,7 +17,7 @@ public class Test {
             ReadUserExcel re = new ReadUserExcel();
             ReadProductExcel pro = new ReadProductExcel();
             Product[] products = pro.readAllProduct(in2);
-            Product[] shoppingCar = new Product[3];
+
             User[] users = re.readExcel(in);
             for (int i = 0; i < users.length; i++) {
                 if (users[i].getUsername().equals(username) && users[i].getPassword().equals(password)) {
@@ -31,24 +32,17 @@ public class Test {
                     in2 = Class.forName("Test").getResourceAsStream("product.xlsx");
                     Product product = pro.readProducById(proId, in2);
                     if (product != null) {
-                        shoppingCar[count++] = product;
+                        shopCart.AddProduct(product);
                     }
-
                     bol = true;
                 }
                 if (!bol) {
                     System.out.println("登录失败");
                 }
             }
-            if (bol) {
-                int index = 0;
-                while (shoppingCar[index] != null && index < shoppingCar.length) {
-                    System.out.println(shoppingCar[index].toString());
-                    index++;
-                }
+
             }
         }
 
     }
-}
 
